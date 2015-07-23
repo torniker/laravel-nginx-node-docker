@@ -1,8 +1,8 @@
 <?php namespace App\Events;
 
-use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
+use Illuminate\Contracts\Broadcasting\ShouldBroadcastNow;
 
-class SomeEvent implements ShouldBroadcast
+class SomeEvent implements ShouldBroadcastNow
 {
 
     public $message;

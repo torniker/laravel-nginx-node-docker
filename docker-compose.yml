@@ -18,7 +18,6 @@ nginx:
    - "80:80"
   links:
    - phpfpm
-   - node
 
 redis:
   image: redis

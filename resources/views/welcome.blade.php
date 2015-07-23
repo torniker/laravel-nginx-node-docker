@@ -7,10 +7,10 @@
         <div class="container">
             <div class="title">Laravel 5</div>
         </div>
-        <script src="http://local.dev/socket/socket.io/socket.io.js"></script>
+        <script src="http://local.dev:3000/socket.io/socket.io.js"></script>
         <script type="text/javascript">
-        var socket = io('ws://local.dev');
-        socket.on('test-channel:SomeEvent', function(message) {
+        var socket = io('ws://local.dev:3000');
+        socket.on('test-channel:App\\Events\\SomeEvent', function(message) {
             console.log(message);
         })
         </script>
